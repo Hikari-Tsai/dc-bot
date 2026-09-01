@@ -1,6 +1,10 @@
 # dc-bot
 
-一個使用 Discord Slash Command 與 OpenAI API 的聊天機器人。使用者可在 Discord 輸入 `/ask` 提問，Bot 會依照自訂 Prompt 回答，並將近期對話儲存在本機 SQLite 資料庫中。
+![dc-bot 在 Discord 中的對話示範](assets/demo.png)
+
+將主播的人設、知識、口吻與互動方式蒸餾成 Prompt，打造能在 Discord 中持續陪伴觀眾的 AI 數位分身。
+
+dc-bot 使用 Discord Slash Command 與 OpenAI API。觀眾可透過 `/ask` 與數位分身互動；Bot 會依照自訂 Prompt 回答，並利用近期對話紀錄延續每位使用者的聊天脈絡。
 
 ## 功能
 
