@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.*
+!.env-example
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Runtime databases and logs
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Local bot prompt
+prompt_topa.txt
+!prompt_topa.example.txt
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
