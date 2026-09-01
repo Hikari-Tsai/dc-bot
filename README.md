@@ -1,3 +1,5 @@
+![dc-bot：將主播人設與知識蒸餾成 AI 數位分身](assets/banner.png)
+
 # dc-bot
 
 ![dc-bot 在 Discord 中的對話示範](assets/demo.png)
