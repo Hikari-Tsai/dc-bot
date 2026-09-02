@@ -15,6 +15,7 @@ load_dotenv(BOT_DIR / ".env")
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2").strip() or "gpt-5.2"
 TARGET_CHANNEL_ID = int(os.getenv("TARGET_CHANNEL_ID", "0"))
 PROMPT_TOPA_DESCRIPTION="跟帕寶聊天"
 PROMPT_TOPA_PATH = BOT_DIR / "prompt_topa.txt"
@@ -408,7 +409,7 @@ async def ask(interaction: discord.Interaction, question: str):
     try:
         response = await asyncio.to_thread(
             llm.responses.create,
-            model="gpt-5.2",
+            model=OPENAI_MODEL,
             instructions=build_llm_instructions(prompt_topa, is_owner),
             input=build_llm_input(
                 question,

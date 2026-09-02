@@ -105,6 +105,7 @@ Bot 啟動時會同步 Slash Command。同步完成後，在 Discord 頻道輸�
 | --- | --- | --- |
 | `DISCORD_TOKEN` | Discord Bot Token | 必填 |
 | `OPENAI_API_KEY` | OpenAI API Key | 必填 |
+| `OPENAI_MODEL` | OpenAI 回覆模型 | `gpt-5.2` |
 | `TARGET_CHANNEL_ID` | 預計限制使用的頻道 ID | `0` |
 | `USER_CONTEXT_LIMIT` | 一般使用者帶入的近期對話數量 | `5` |
 | `OWNER_CONTEXT_LIMIT` | 台主帶入的近期對話數量 | 同 `USER_CONTEXT_LIMIT` |
