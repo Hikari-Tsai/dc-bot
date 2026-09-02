@@ -115,6 +115,8 @@ Bot 啟動時會同步 Slash Command。同步完成後，在 Discord 頻道輸�
 | `OWNER_USER_NAMES` | 台主名稱備援，多個以逗號分隔 | 空白 |
 | `OWNER_PROMPT_HINT` | 僅在台主發問時附加的指示 | 程式內建文字 |
 
+`OPENAI_MODEL` 可設定為 `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna`、`gpt-5.5`、`gpt-5.4`、`gpt-5.4-mini`、`gpt-5.4-nano`、`gpt-5.3-chat-latest` 或 `gpt-5.2`。其中 `gpt-5.3-chat-latest` 已淘汰，不建議新專案使用；實際可用模型仍依 OpenAI 帳號權限而定。
+
 目前 `main.py` 內的頻道檢查程式碼已被註解，因此 `TARGET_CHANNEL_ID` 尚不會限制 `/ask` 的使用頻道。
 
 建議優先使用 `OWNER_USER_IDS` 辨識台主。Discord 顯示名稱可以被冒用，`OWNER_USER_NAMES` 只適合作為備援。
